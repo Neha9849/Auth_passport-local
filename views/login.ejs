@@ -1,0 +1,14 @@
+<form action="/users/login" method="post">
+    <h1 class="text-center monospace p-2 secondaryColor ">Login</h1>
+    <%- include('partials/msgs.ejs') %>
+    <label for="email" class="form-label primaryColor">Email</label>
+    <input type="email" class="form-control  shadow-none" id="email" name="email" value="<%= typeof email !='undefined' ? email:'' %>">
+
+    <label for="password" class="form-label primaryColor">Password</label>
+    <input type="password" class="form-control shadow-none" id="password" name="password" value="<%= typeof password !='undefined' ? password:'' %>">
+
+    
+
+    <input type="submit" value="Login" class="btn btn-outline-light w-100 mt-3 p-2 secondaryColor">
+</form>
+<p class="text-light text-center mt-2">Don't have an account?<a href="/users/register" class="secondaryColor">Register</a></p>
