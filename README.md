@@ -10,7 +10,7 @@ Passport-local strategy is a session based authentication i.e it uses *Browser c
   ``` cd Auth_passport-local ```
  3. Install the dependencies
    ``` npm i ```
- 4. Inside the config folder create a file *keys.js* with 
+ 4.Create config folder and add a file *keys.js* with 
    following code-
   ```
   module.exports ={
