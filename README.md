@@ -1,7 +1,7 @@
 # Authentication using Passport-local Strategy
 Passport-local strategy is a session based authentication i.e it uses *Browser cookies* and *Backend sessions* to manage logged-in and logged-out users.
 
-##Local Setup
+## Local Setup
 1. Clone this repo
    ``` git clone https://github.com/Neha9849/Auth_passport-local.git  ```
  2. Change directory
