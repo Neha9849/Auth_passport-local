@@ -7,12 +7,13 @@ const LocalStrategy = require('passport-local').Strategy;
 const User=require('./models/users');
 const bcrypt = require('bcryptjs');
 const cookieParser = require("cookie-parser");
+require('dotenv').config();
 
 const app=express();
 const PORT = process.env.PORT || 5000;
 
 //connect to db 
-const db= require('./config/keys').MongoURI;
+const db= require('./config/keys').MongoURI || process.env.MongoURI;
 mongoose.connect(db,{useNewUrlParser: true})
 .then(()=>{console.log('mongodb connected')})
 .catch(err => console.log(err));
